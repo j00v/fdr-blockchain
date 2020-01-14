@@ -28,7 +28,7 @@ packages:
 - "python-setuptools"
 - "fonts-tuffy"
 remotes:
-- "url": "https://github.com/fdreserve/fdr.git"
+- "url": "https://github.com/fdreserve/fdr-blockchain.git"
   "dir": "fdreserve"
 files:
 - "MacOSX10.11.sdk.tar.gz"

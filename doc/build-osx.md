@@ -40,7 +40,7 @@ Instructions: Homebrew
 
 1. Clone the github tree to get the source code and go into the directory.
 
-        git clone https://github.com/fdreserve/fdr.git
+        git clone https://github.com/fdreserve/fdr-blockchain.git
         cd FDR2
 
 2.  Build fdreserved:

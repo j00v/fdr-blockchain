@@ -21,8 +21,8 @@ Build-Depends: debhelper,
  libprotobuf-dev, protobuf-compiler
 Standards-Version: 1.0
 Homepage: https://www.fdreserve.com/
-Vcs-Git:  https://github.com/fdreserve/fdr.git
-Vcs-Browser: https://github.com/fdreserve/fdr
+Vcs-Git:  https://github.com/fdreserve/fdr-blockchain.git
+Vcs-Browser: https://github.com/fdreserve/fdr-blockchain
 
 Package: fdreserved
 Architecture: any

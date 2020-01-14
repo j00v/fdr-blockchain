@@ -40,7 +40,7 @@ The following are developer notes on how to build fdreserve on your native platf
 
 Development
 ---------------------
-The fdreserve repo's [root README](https://github.com/fdreserve/fdr/blob/master/README.md) contains relevant information on the development process and automated testing.
+The fdreserve repo's [root README](https://github.com/fdreserve/fdr-blockchain/blob/master/README.md) contains relevant information on the development process and automated testing.
 
 - [Developer Notes](developer-notes.md)
 - [Multiwallet Qt Development](multiwallet-qt.md)

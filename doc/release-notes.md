@@ -1,13 +1,13 @@
 FDR Core version 2.0 is now available from:
 
-  <https://github.com/fdreserve/fdr/releases>
+  <https://github.com/fdreserve/fdr-blockchain/releases>
 
 This is a major version release, including various bug fixes and
 performance improvements, as well as updated translations.
 
 Please report bugs using the issue tracker at github:
 
-  <https://github.com/fdreserve/fdr/issues>
+  <https://github.com/fdreserve/fdr-blockchain/issues>
 
 Compatibility
 ==============
