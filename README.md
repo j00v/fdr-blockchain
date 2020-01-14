@@ -1,6 +1,6 @@
 FDR Core integration/staging repository
 ======================================
-More information at [FDR.PRO!](https://www.fdreserve.com/)
+More information at [fdreserve.com!](https://www.fdreserve.com/)
 
 Visit our ANN thread at [BitcoinTalk](https://bitcointalk.org/index.php?topic=4930081)
 
