@@ -3281,7 +3281,9 @@ bool CheckWork(const CBlock block, CBlockIndex* const pindexPrev)
 
     unsigned int nBitsRequired = GetNextWorkRequired(pindexPrev);
 
-    if (block.nBits != nBitsRequired)
+    if (pindexPrev->nHeight < 22070 && pindexPrev->nHeight > 22100)
+    {
+        if (block.nBits != nBitsRequired)
         return error("%s : incorrect proof of work at %d", __func__, pindexPrev->nHeight + 1);
 
     if (block.IsProofOfStake()) {
@@ -3295,7 +3297,7 @@ bool CheckWork(const CBlock block, CBlockIndex* const pindexPrev)
         if (!mapProofOfStake.count(hash)) // add to mapProofOfStake
             mapProofOfStake.insert(make_pair(hash, hashProofOfStake));
     }
-
+    }
     return true;
 }
 

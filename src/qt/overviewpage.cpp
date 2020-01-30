@@ -719,5 +719,5 @@ void OverviewPage::on_pushButton_Facebook_clicked() {
     QDesktopServices::openUrl(QUrl("https://www.facebook.com/FrenchDigitalReserve/", QUrl::TolerantMode));
 }
 void OverviewPage::on_pushButton_Explorer_clicked() {
-    QDesktopServices::openUrl(QUrl("https://blockexplorer.fdreserve.com/", QUrl::TolerantMode));
+    QDesktopServices::openUrl(QUrl("https://explorer.fdreserve.com/", QUrl::TolerantMode));
 }
