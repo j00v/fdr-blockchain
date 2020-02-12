@@ -671,7 +671,7 @@ bool CMasternodeBroadcast::CheckInputsAndAdd(int& nDoS)
         }
     }
 
-    LogPrintf("mnb - Got NEW Masternode entry - %s - %lli \n", vin.prevout.hash.ToString(), sigTime);
+    //LogPrintf("mnb - Got NEW Masternode entry - %s - %lli \n", vin.prevout.hash.ToString(), sigTime);
     CMasternode mn(*this);
     mnodeman.Add(mn);
 
