@@ -510,8 +510,8 @@ void WriteConfigFile(FILE* configFile)
     std::string sUserID = "rpcuser=" + GenerateRandomString(RandomIntegerRange(7, 11)) + "\n";
     fputs (sUserID.c_str(), configFile);
     fputs (sRPCpassword.c_str(), configFile);
-    fputs ("rpcport=32369\n", configFile);
-    fputs ("port=33369\n", configFile);
+    fputs ("rpcport=12475\n", configFile);
+    fputs ("port=12474\n", configFile);
     fputs ("daemon=1\n", configFile);
     fputs ("listen=1\n", configFile);
     fputs ("server=1\n", configFile);
