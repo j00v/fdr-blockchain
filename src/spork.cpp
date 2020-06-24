@@ -208,8 +208,6 @@ void ReprocessBlocks(int nBlocks)
         DisconnectBlocksAndReprocess(nBlocks);
     }
 
-    state
-
     if (state.IsValid()) {
         ActivateBestChain(state);
     }
