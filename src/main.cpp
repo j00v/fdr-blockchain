@@ -2971,7 +2971,7 @@ CBlockIndex* AddToBlockIndex(const CBlock& block)
         // ppcoin: record proof-of-stake hash value
         if (pindexNew->IsProofOfStake()) {
             if (!mapProofOfStake.count(hash))
-                LogPrintf("AddToBlockIndex() : hashProofOfStake not found in map \n");
+                //LogPrintf("AddToBlockIndex() : hashProofOfStake not found in map \n");
             pindexNew->hashProofOfStake = mapProofOfStake[hash];
         }
 
