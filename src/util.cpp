@@ -515,14 +515,12 @@ void WriteConfigFile(FILE* configFile)
     fputs ("daemon=1\n", configFile);
     fputs ("listen=1\n", configFile);
     fputs ("server=1\n", configFile);
-    fputs ("addnode=207.180.234.206\n", configFile); 
-    fputs ("addnode=207.180.235.144\n", configFile);
-    fputs ("addnode=164.68.115.138\n", configFile);
-    fputs ("addnode=164.68.115.141\n", configFile);
+    fputs ("addnode=167.86.119.223\n", configFile); 
+    fputs ("addnode=164.68.96.160\n", configFile);
+    fputs ("addnode=167.86.124.134\n", configFile);
+    fputs ("addnode=167.86.93.65\n", configFile);
     fputs ("addnode=164.68.121.216\n", configFile);
     fputs ("addnode=167.86.124.134\n", configFile);
-    fputs ("addnode=167.86.114.163\n", configFile);
-    fputs ("addnode=167.86.93.67\n", configFile);
     fclose(configFile);
     ReadConfigFile(mapArgs, mapMultiArgs);
 }
