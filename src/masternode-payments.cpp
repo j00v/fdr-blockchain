@@ -244,7 +244,7 @@ void CMasternodePayments::ProcessMessageMasternodePayments(CNode* pfrom, std::st
             auto winner_mn = mnodeman.Find(winner.payee);
 
             if (!winner_mn) {
-                LogPrintf("mnwp - unknown payee %s\n", payee_addr.ToString().c_str());
+                //LogPrintf("mnwp - unknown payee %s\n", payee_addr.ToString().c_str()); //TO-DO active again, whiletime avoid efforts during sync
                 continue;
             }
 
@@ -259,7 +259,7 @@ void CMasternodePayments::ProcessMessageMasternodePayments(CNode* pfrom, std::st
 
             std::string strError = "";
             if (!winner.IsValid(pfrom, strError)) {
-                if(strError != "") LogPrintf("mnwp - invalid message - %s\n", strError);
+                if(strError != "") //LogPrintf("mnwp - invalid message - %s\n", strError); TO-DO:active again in next big release.
                 continue;
             }
 
@@ -612,7 +612,7 @@ bool CMasternodePaymentWinner::IsValid(CNode* pnode, std::string& strError)
 
     if (!pmn) {
         strError = strprintf("Unknown Masternode %s", vinMasternode.prevout.hash.ToString());
-        LogPrintf("CMasternodePaymentWinner::IsValid - %s\n", strError);
+        //LogPrintf("CMasternodePaymentWinner::IsValid - %s\n", strError); //TO-DO:active again for now disabled error log
         mnodeman.AskForMN(pnode, vinMasternode);
         return false;
     }
