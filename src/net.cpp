@@ -1232,8 +1232,7 @@ void ThreadOpenConnections()
         int nTries = 0;
         while (true) {
 
-            MilliSleep(250);
-
+            
             CAddress addr = addrman.Select();
 
             // if we selected an invalid address, restart
