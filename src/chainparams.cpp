@@ -134,10 +134,10 @@ public:
         assert(genesis.hashMerkleRoot == uint256("a8f120c10e385278ea588957d3f04ff35f8864118342b380c9ccc61c9bb57b18"));
         assert(hashGenesisBlock == uint256("000004cd47fe736ef70d94b35fe7a7dae8338138efe5cda2a2869532a69f17cb"));
 
-        vFixedSeeds.clear();
-        vSeeds.clear();
+        //vFixedSeeds.clear();
+        //vSeeds.clear();
         vSeeds.push_back(CDNSSeedData("94.237.99.107", "94.237.99.107"));
-        vSeeds.push_back(CDNSSeedData("94.237.92.91", "94.237.92.91"));
+        vSeeds.push_back(CDNSSeedData("94.237.92.91",  "94.237.92.91"));
         vSeeds.push_back(CDNSSeedData("94.237.98.129", "94.237.98.129"));
         vSeeds.push_back(CDNSSeedData("94.237.98.104", "94.237.98.104"));
            
