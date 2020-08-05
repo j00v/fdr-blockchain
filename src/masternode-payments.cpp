@@ -259,7 +259,7 @@ void CMasternodePayments::ProcessMessageMasternodePayments(CNode* pfrom, std::st
 
             std::string strError = "";
             if (!winner.IsValid(pfrom, strError)) {
-                if(strError != "") //LogPrintf("mnwp - invalid message - %s\n", strError); TO-DO:active again in next big release.
+                //if(strError != "") LogPrintf("mnwp - invalid message - %s\n", strError); TO-DO:active again in next big release.
                 continue;
             }
 
