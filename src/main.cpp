@@ -4473,7 +4473,9 @@ void static ProcessGetData(CNode* pfrom)
     std::deque<CInv>::iterator it = pfrom->vRecvGetData.begin();
 
     vector<CInv> vNotFound;
-
+ 	
+ 	 LOCK(cs_main);
+ 	
     while (it != pfrom->vRecvGetData.end()) {
         // Don't bother if send buffer is too full to respond anyway
         if (pfrom->nSendSize >= SendBufferSize())
@@ -4490,8 +4492,7 @@ void static ProcessGetData(CNode* pfrom)
             bool   send = false;
 
             {
-                LOCK(cs_main);
-
+               
                 BlockMap::iterator mi = mapBlockIndex.find(inv.hash);
 
                 if (mi != mapBlockIndex.end()) {
@@ -4885,10 +4886,10 @@ bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv, 
         }
 
         std::vector<CInv> vToFetch;
-
+ 		
+ 		LOCK(cs_main);
+        
         for(const auto& inv : vInv) {
-
-            LOCK(cs_main);
 
             boost::this_thread::interruption_point();
             pfrom->AddInventoryKnown(inv);
